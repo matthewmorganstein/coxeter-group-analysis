@@ -9,6 +9,7 @@ The Coxeter Group Analysis system provides a mathematical framework for analyzin
 
 ## Applications
 Market State Analysis: The system analyzes current market data, generates Dynkin diagrams, and classifies patterns.
+
 Risk Assessment: The system provides risk metrics through orbit size, symmetry count, and classification complexity.
 
 ## Core Concepts
@@ -20,7 +21,7 @@ A Coxeter group is a mathematical structure built from reflections in a geometri
 - Order: The number of times you need to apply a combination of transformations to get back to the starting point
 
 ### Reflection Matrices
-Each generator in our system represents a reflection. These reflections help us identify symmetries in the data by showing how different parts of a price pattern mirror each other. The reflection matrices we construct capture these symmetrical relationships.
+Each generator in our system represents a reflection. These reflections help us identify symmetries in the data by showing how different parts of a volume pattern mirror each other. The reflection matrices we construct capture these symmetrical relationships.
 
 ### Orbits and Their Predictive Power
 An orbit is the set of all points we can reach by applying our transformations to a starting point. In financial terms, this represents all the possible variations of a pattern that are mathematically related.
