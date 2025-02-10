@@ -34,7 +34,7 @@ The predictive power of orbits comes from their ability to:
 ## Dynkin Diagrams and Pattern Classification
 
 ### Understanding Dynkin Diagrams
-A Dynkin diagram is a visual representation of how the generators in our Coxeter group interact. In our system, these diagrams serve as a powerful classification tool for market patterns.
+A Dynkin diagram is a visual representation of how the generators in our Coxeter group interact. In our system, these diagrams serve as a classification tool for market patterns.
 
 Components of a Dynkin diagram:
 - Nodes: Represent generators (basic reflections)
@@ -45,7 +45,7 @@ Components of a Dynkin diagram:
 We use Dynkin diagrams to classify market patterns in several steps:
 
 1. Pattern Identification
-   - Extract a sequence of price movements
+   - Extract a sequence of RISE movements
    - Normalize the data to remove scale dependencies
    - Identify basic symmetries in the pattern
 
@@ -75,7 +75,7 @@ const mean = normalizedValues.reduce((a, b) => a + b, 0) / normalizedValues.leng
 const std = Math.sqrt(normalizedValues.reduce((a, b) => a + (b - mean) ** 2, 0) / normalizedValues.length);
 ```
 
-This normalization ensures that patterns can be compared regardless of their absolute price levels.
+This normalization ensures that patterns can be compared regardless of their absolute indicator values.
 
 ### Pattern Detection
 The system uses sliding windows of various sizes to detect patterns:
@@ -114,7 +114,7 @@ The system provides risk metrics through:
 ## Limitations and Considerations
 
 ### Mathematical Constraints
-- Assumes market patterns have geometric symmetries
+- Assumes RISE patterns have geometric symmetries
 - Requires sufficient data for reliable pattern identification
 - May not capture all types of market behavior
 
@@ -143,7 +143,7 @@ The Coxeter Group Analysis system provides a sophisticated mathematical framewor
 3. Classification Power: Employs Dynkin diagrams for systematic pattern categorization
 
 The system is particularly valuable for:
-- Identifying recurring market patterns
-- Classifying complex market structures
+- Identifying recurring indicator patterns
+- Classifying complex indicator structures
 - Estimating probability distributions for future states
 - Managing risk through pattern complexity analysis
